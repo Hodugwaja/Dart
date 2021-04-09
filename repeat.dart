@@ -11,5 +11,5 @@ void main(){
     total += number; 
   }
   
-  print(total);
+  print(total)
 }
