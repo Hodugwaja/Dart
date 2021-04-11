@@ -1,8 +1,16 @@
-  void main() {
+void main() {
   Kiwoom LJH = new Kiwoom('이정후', 3);
   Kiwoom PBH = new Kiwoom('박병호', 4);
-    
-    
+
+  LJH.sayName();
+  PBH.sayName();
+
+  Kiwoom Player = new Kiwoom.fromMap({
+    'name' : '박병호',
+    'number' : '4'
+  });
+
+  Player.sayName();
 }
 
 class Kiwoom {
@@ -12,6 +20,7 @@ class Kiwoom {
   Kiwoom(
     String name,
     int number,
+    
   )   : this.name = name,
         this.number = number;
 
